@@ -173,33 +173,12 @@
 
         "General - Font": {
             "description": "Use a different font for the SteamUI",
-            "default": "Be Vietnam Pro (default)",
+            "default": "Defaults",
             "tab": "General",
             "section": "Other",
             "values": {
-                "Be Vietnam Pro (default)": {
-                    "TargetCss": { "affects": [".*"], "src": "options/fonts/beVietnamPro.css" }
-                },
-                "Arial": {
-                    "TargetCss": { "affects": [".*"], "src": "options/fonts/arial.css" }
-                },
-                "Gluten": {
-                    "TargetCss": { "affects": [".*"], "src": "options/fonts/gluten.css" }
-                },
-                "Montserrat": {
-                    "TargetCss": { "affects": [".*"], "src": "options/fonts/montserrat.css" }
-                },
-                "Quicksand": {
-                    "TargetCss": { "affects": [".*"], "src": "options/fonts/quicksand.css" }
-                },
-                "Roboto": {
-                    "TargetCss": { "affects": [".*"], "src": "options/fonts/roboto.css" }
-                },
-                "Source Code Pro": {
-                    "TargetCss": { "affects": [".*"], "src": "options/fonts/sourceCodePro.css" }
-                },
-                "Ubuntu": {
-                    "TargetCss": { "affects": [".*"], "src": "options/fonts/ubuntu.css" }
+                "Defaults": {
+                    "TargetCss": { "affects": [".*"], "src": "options/fonts/defaults.css" }
                 }
             }
         },
