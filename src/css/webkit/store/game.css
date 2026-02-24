@@ -119,8 +119,8 @@
 }
 
 
-/* Community Hub */
-.game_bg.application .page_title_area .apphub_OtherSiteInfo .btn_medium {
+/*TODO SteamDB buttons */
+.game_bg.application .page_title_area .apphub_OtherSiteInfo .btn_steamdb {
     display: none;
 }
 
@@ -1079,6 +1079,7 @@ body.v6.game_bg.application .game_area_already_owned.page_content {
     display: flex;
     width: auto !important;
     height: unset;
+    margin-bottom: 16px !important;
     padding: 12px !important;
     font-size: 16px;
     font-weight: 600;
@@ -1124,9 +1125,6 @@ body.v6.game_bg.application .game_area_already_owned.page_content {
     border-radius: 8px;
     background: none;
     background-color: rgb(var(--st-color-2));
-}
-.game_bg.application:has(.game_area_already_owned) .game_area_play_stats {
-    margin-top: 16px;
 }
 
 
@@ -1356,7 +1354,7 @@ body.v6.game_bg.application .game_area_already_owned.page_content {
 .game_bg.application .game_description_column .game_area_purchase .game_area_purchase_game h2 {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: calc(100% - 138px);
     margin-bottom: 2px;
     font-size: 20px;
     font-weight: 600;
@@ -1366,6 +1364,8 @@ body.v6.game_bg.application .game_area_already_owned.page_content {
 
 /* Bundle text */
 .game_bg.application .game_description_column .game_area_purchase .game_area_purchase_game .title .bundle_label {
+    position: absolute;
+    right: 12px;
     font-size: 14px;
     font-weight: 600;
     color: rgb(var(--st-blue));
@@ -1406,11 +1406,17 @@ body.v6.game_bg.application .game_area_already_owned.page_content {
     gap: 6px;
     height: unset;
 }
+.game_bg.application .game_description_column .game_area_purchase .package_contents_capsules::after {
+    display: none !important;
+}
 
 .game_bg.application .game_description_column .game_area_purchase .bundle_contents_preview_item,
 .game_bg.application .game_description_column .game_area_purchase .package_contents_capsule {
     position: relative;
+    left: 0 !important;
     display: none;
+    margin: 0 !important;
+    box-shadow: unset;
 }
 .game_bg.application .game_description_column .game_area_purchase .bundle_contents_preview_item:nth-child(-n+3),
 .game_bg.application .game_description_column .game_area_purchase .package_contents_capsule:nth-child(-n+3) {
@@ -1568,7 +1574,7 @@ body.v6.game_bg.application .game_area_already_owned.page_content {
     gap: 6px;
     height: unset;
     margin: 0;
-    padding: 6px;
+    padding: 6px !important;
     font-size: 14px;
     font-weight: 600;
     line-height: unset;
